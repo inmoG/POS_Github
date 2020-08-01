@@ -3,9 +3,11 @@
 # 분석
 
 Enter an IP address에 IP를 입력하니 `ping`명령이 실행되었다. `ping`은 쉘을 통해 시스템 명령을 실행해야 한다. 하지만 웹에서 시스템 명령이 실행된다는 것은 운영체제에게 시스템 명령을 호출한다는 의미로 `Command Injection` 취약점이 있다고 추측할 수 있다.
+
 ![](https://images.velog.io/images/jjewqm/post/e83c1f09-ce30-4889-9f94-27b5ee8c8adf/18.png)
 
 `Command Injection` 취약점이 있는지 소스코드를 확인하겠다.
+
 ![](https://images.velog.io/images/jjewqm/post/10e74a49-dbdf-408e-88f7-b0667166cbe3/19.png)
 
 `shell_exec()` 함수는 쉘을 통해 명령을 실행하고 전체 출력을 문자열로 반환하는 함수이다. 해당 함수를 사용해 시스템 명령이 실행된다 추측할 수 있다.
@@ -41,26 +43,33 @@ Enter an IP address에 IP를 입력하니 `ping`명령이 실행되었다. `ping
 ![](https://images.velog.io/images/jjewqm/post/aa748794-1e84-4e87-94c5-86c5018d4887/image.png)
 
 - &&
+
   ![](https://images.velog.io/images/jjewqm/post/219c7830-ac8e-4681-99cc-765fc13b7682/image.png)
 
 - |
+
   ![](https://images.velog.io/images/jjewqm/post/7a4dd40a-aed8-41ba-9257-d1686cea0695/image.png)
 
 - ||
+
   ![](https://images.velog.io/images/jjewqm/post/2ce7a461-bae7-482f-bfab-92aa1c01f7c8/image.png)
 
 #### Medium level
 
 `medium level`에서 `;ls`, `;pwd`, `&&cat /etc/passwd` 명령이 실행되지 않는다. 소스코드를 확인하니 `&&`와 `;`를 공백으로 치환한다.
+
 ![](https://images.velog.io/images/jjewqm/post/75816a19-d0e4-4db9-a657-54f350e683e6/24.png)
 
 `&&`, `;` 외 다른 메타문자를 사용해 공격을 진행한다. `&`와 `|`를 사용해 공격이 성공하였다.
+
 ![](https://images.velog.io/images/jjewqm/post/8f508f6e-e9d2-421e-9712-d21d7573ae10/image.png)
 
 #### high level
 
 `high level`에서는 사용 가능한 특수문자 대부분을 필터링한다. 이제 우회 방법은 필터링되는 문자의 허점을 찾는 것이다. 즉 개발자의 실수를 찾아야 한다.
+
 ![](https://images.velog.io/images/jjewqm/post/835dbd37-5b84-4fca-9c9f-dc4f7f4f3ba2/27.png)
 
-특수문자 대부분을 필터링하였지만 `|` 문자 필터링을 실수해 공격에 성공하였다.  
+특수문자 대부분을 필터링하였지만 `|` 문자 필터링을 실수해 공격에 성공하였다.
+
 ![](https://images.velog.io/images/jjewqm/post/b63216c2-02b4-49a5-9f4b-0998f47cdd80/28.png)
