@@ -1,0 +1,12 @@
+- git init : 레포지토리 생성
+- .git : 깃 레포지토리
+- git status : 깃 상태 확인
+- git add : 스테이징 단계로 파일 추가
+- git commit : 버전 생성
+- git log : 버전 확인
+- git log --stat : commit file status 확인
+- git remote add origin(별명) remote repo : 원격 저장소 연결
+- git remote -v : 원격 저장소 주소 확인
+- git push : 버전 업로드
+- git clone remote repo : 원격 저장소 복제
+- git restore --staged <file path> : 스테이징 단계에서 이전으로 되돌린다.
