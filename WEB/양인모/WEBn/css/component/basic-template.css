@@ -1,0 +1,52 @@
+.webn-header__title {
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 30px 0px;
+}
+
+.webn-nav {
+    border-right: 1px solid black;
+    width: 150px;
+}
+
+.webn-nav__list li {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.grid__webn-main {
+    padding: 30px;
+}
+
+.webn-main__header {
+    font-size: 40px;
+}
+
+.webn-main__video-link {
+    padding: 30px 0px;
+}
+
+.webn-main__description p {
+    margin-bottom: 10px;
+}
+
+.webn-main__description-title {
+    font-size: 25px;
+    margin: 15px 0px;
+}
+
+.skill-title {
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: tomato;
+}
+
+.sql-injection {
+    padding: 20px 0px;
+}
