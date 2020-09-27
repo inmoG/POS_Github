@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+            animation: 5s scaleAndRotateSquare ease-in-out;
+            /*infinite : animation 효과를 계속 반복하게 함*/
+        }
+
+        @keyframes scaleAndRotateSquare {
+            0% {
+                transform: none;
+            }
+
+            30% {
+                transform: rotate(2turn);
+                background-color: darkmagenta;
+            }
+
+            70% {
+                transform: scale(0.5, 0.5);
+                background-color: dodgerblue;
+            }
+
+            100% {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

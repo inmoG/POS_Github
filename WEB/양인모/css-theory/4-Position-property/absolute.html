@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline Example</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      .abs-box{
+          width: 400px;
+          height: 400px;
+          background-color: greenyellow;
+          position: relative;
+      }
+      .abs-child{
+          width: 100px;
+          height: 100px;
+          background-color: lavender;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <div class="abs-box">
+          <div class="abs-child"></div>
+      </div>
+  </body>
+</html>

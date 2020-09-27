@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <mtea charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Box Model</title>
+        <style>
+            body,
+            html {
+                padding: 0;
+                margin: 0;
+                background-color: green;
+                height: 100%;
+
+            }
+
+            .box {
+                background-color: snow;
+                width: 50%;
+                height: 50%;
+
+                /*
+                padding-top: 50px;
+                padding-left: 50px;
+                margin-left: 50px;
+                margin-top: 50px;
+                */
+                /*
+                margin: 30px; 상하좌우에 30px이 적용된다.
+                margin: 20px 10px 5px 2px; 상하좌우에 입력한 px이 적용된다.
+                */
+                border: 5px dashed yellow;
+            }
+
+            .inside-box {
+                background-color: blue;
+                width: 50%;
+                height: 50%;
+                padding-top: 10px;
+                border: 5px dashed red;
+
+            }
+        </style>
+</head>
+
+<body>
+    <div class='box'>
+        <div class='inside-box'></div>
+    </div>
+</body>
+
+</html>
