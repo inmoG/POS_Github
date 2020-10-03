@@ -5,7 +5,7 @@
 |     트랙      | 명단 | 계획서 링크 | 팀장 |
 | :-----------: | :--: | :---------: |:--:|
 |    웹 개발    |      |             ||
-|    웹 해킹    |      |             ||
+|    웹 해킹    | 최준석, 양현준, 전형민, 최준희 | https://docs.google.com/document/d/1t_w0WOAN3s65a2q8cpbkrvvWXQFEy_ARG8DmhywUw7c/edit?usp=sharing | 최준석 |
 | 악성코드 분석 |      |             ||
 |  시스템 해킹  |      |             ||
 | 디지털 포렌식 |      |             ||
