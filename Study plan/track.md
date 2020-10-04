@@ -6,6 +6,6 @@
 | :-----------: | :--: | :---------: |:-------:|
 |    웹 개발    |  양인모, 이영재  | https://docs.google.com/document/d/1qA49Th73W4xutJwtdumcvIaVlpds6AqrbTOPGLGR1PI/edit?usp=sharing | 양인모 |
 |    웹 해킹    | 최준석, 양현준, 전형민, 최준희 | https://docs.google.com/document/d/1t_w0WOAN3s65a2q8cpbkrvvWXQFEy_ARG8DmhywUw7c/edit?usp=sharing | 최준석 |
-| 악성코드 분석 |      |             ||
+| 악성코드 분석 | 김민규, 이재용     |   https://docs.google.com/document/d/13UwkY-6BUfSeAJ3qljZ_nngTsIVNyeUWnn_eajPG1U8/edit?usp=sharing        | 김민규|
 |  시스템 해킹  |      |             ||
 | 디지털 포렌식 |      |             ||
