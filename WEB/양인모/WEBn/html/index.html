@@ -25,10 +25,22 @@
         </nav>
         <div class="grid__webn-main">
             <main class="webn-main">
-                <h2 class="webn-main__header"><a
-                        href="https://www.inflearn.com/course/%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%9B%B9-%EC%BD%94%EB%94%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%8B%9C%EC%9E%91-web-1"
-                        target="_blank">HTML</a>
-                </h2>
+                <div class="header">
+                    <h2 class="webn-main__header"><a
+                            href="https://www.inflearn.com/course/%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%9B%B9-%EC%BD%94%EB%94%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%8B%9C%EC%9E%91-web-1"
+                            target="_blank">HTML</a>
+                    </h2>
+
+                    <div class="darkmode">
+                        <input type="button" value="night" onclick=" var target = document.querySelector('body');
+
+                            if(this.value==='night' ) { target.style.backgroundColor='black'; // this == input tag
+                            target.style.color='white'; this.value='day'; } else{
+                            target.style.backgroundColor='white';
+                            target.style.color='black'; this.value='night';}">
+                    </div>
+                </div>
+
                 <p class="webn-main__video-link">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE?" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

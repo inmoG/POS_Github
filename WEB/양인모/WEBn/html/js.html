@@ -24,8 +24,22 @@
         </nav>
         <div class="grid__webn-main">
             <main class="webn-main">
-                <h2 class="webn-main__header"><a href="https://www.inflearn.com/course/web2-javascript"
-                        target="_blank">Javascript</a></h2>
+                <div class="header">
+                    <h2 class="webn-main__header"><a href="https://www.inflearn.com/course/web2-javascript"
+                            target="_blank">Javascript</a></h2>
+
+                    <div class="darkmode">
+                        <input type="button" value="night" onclick=" var target = document.querySelector('body');
+        
+                                    if(this.value==='night' ) { target.style.backgroundColor='black'; // this == input tag
+                                    target.style.color='white'; this.value='day'; } else{
+                                    target.style.backgroundColor='white';
+                                    target.style.color='black'; this.value='night';}">
+                    </div>
+                </div>
+
+
+
                 <p class="webn-main__video-link">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dPRtcRwKo-Y" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

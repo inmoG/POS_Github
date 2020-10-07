@@ -24,6 +24,12 @@
     padding: 30px;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .webn-main__header {
     font-size: 40px;
 }
@@ -49,4 +55,29 @@
 
 .sql-injection {
     padding: 20px 0px;
+}
+
+@media(max-width:800px) {
+    #grid {
+        display: block;
+    }
+
+    .webn-nav {
+        border-right: none;
+        width: auto;
+    }
+
+    .webn-header__title {
+        border-bottom: none;
+    }
+
+    .webn-nav__list li {
+        text-align: center;
+    }
+
+    @media (max-width:600px) {
+        .webn-main__video-link iframe {
+            width: 100%;
+        }
+    }
 }
