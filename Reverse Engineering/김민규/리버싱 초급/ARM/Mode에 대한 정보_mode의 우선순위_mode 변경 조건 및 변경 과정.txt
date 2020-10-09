@@ -1,0 +1,26 @@
+http://recipes.egloos.com/v/4986862
+-> 
+USR, SYS 모드를 제외한 나머지 모드들에 대한 간단한 설명
+
+각 모드의 주소(그림으로 그린 표)
+
+	10000 0x10 User User
+
+각 mode의 우선순위
+
+mode를 변경할 때 필요한 조건과 변경 과정
+
+
+
+USR와 SYS 모드만 이전 mode의 CPSR을 저장하는 SPSR이 없다. 이유는 아마도 USR 모드와 SYS 모드가 일반적인, 즉 정상적인 상태일 때 사용하는
+모드이기 때문일 것이다.
+
+	USR/SYS 모드 사용 중 문제 발생 -> mode 변경, 해당 mode의 SPSR에 USR/SYS 모드의 CPSR 정보 백업 -> 문제 해결 -> 다시 USR/SYS 모드로 변경
+
+	이때 USR/SYS 모드에는 SPSR이 없기 때문에 문제 해결을 위해 변경된 mode의 CPSR 정보는 사라진다.
+	하지만 이미 문제는 해결되었기에 상관이 없다.
+
+	굳이 USR/SYS 모드 이전의 mode에 대한 CPSR 정보를 알아야 할 때는 Stack에 저장한다.
+
+http://recipes.egloos.com/5631403
+-> 각 모드가 사용하는 레지스터 정보
