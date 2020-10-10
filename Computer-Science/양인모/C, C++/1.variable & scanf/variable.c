@@ -11,7 +11,6 @@ int main(void)
 
     float f = 60.5;
     printf("%.1f\n", f);
-
     double d = 4.429;
     printf("%.2lf\n", d);
 

@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    /*
+	/*
 	int add = 3 + 7;
 	printf("%d\n", add);
 	
@@ -45,10 +45,10 @@ int main(void)
 	printf("%d %d %d %d", a, b, c, d);
 	*/
 
-    int a = 1;
-    printf("++a : %d \n", ++a); //2
-    a = 1;
-    printf("a++ : %d\n", a++); //1
-    printf("a : %d\n", a);     //2
-    return 0;
+	int a = 1;
+	printf("++a : %d \n", ++a); //2
+	a = 1;
+	printf("a++ : %d\n", a++); //1
+	printf("a : %d\n", a);	   //2
+	return 0;
 }
