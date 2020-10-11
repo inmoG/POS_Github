@@ -1,0 +1,88 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "598f7ec4d2c3f9161dc9ad7564ce681966ffbf5c99a024ad7f305bf42f525329"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.8"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "altgraph": {
+            "hashes": [
+                "sha256:1f05a47122542f97028caf78775a095fbe6a2699b5089de8477eb583167d69aa",
+                "sha256:c623e5f3408ca61d4016f23a681b9adb100802ca3e3da5e718915a9e4052cebe"
+            ],
+            "version": "==0.17"
+        },
+        "future": {
+            "hashes": [
+                "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
+            ],
+            "version": "==0.18.2"
+        },
+        "pefile": {
+            "hashes": [
+                "sha256:a5d6e8305c6b210849b47a6174ddf9c452b2888340b8177874b862ba6c207645"
+            ],
+            "version": "==2019.4.18"
+        },
+        "pyinstaller": {
+            "hashes": [
+                "sha256:970beb07115761d5e4ec317c1351b712fd90ae7f23994db914c633281f99bab0"
+            ],
+            "index": "pypi",
+            "version": "==4.0"
+        },
+        "pyinstaller-hooks-contrib": {
+            "hashes": [
+                "sha256:a5fd45a920012802e3f2089e1d3501ef2f49265dfea8fc46c3310f18e3326c91",
+                "sha256:c382f3ac1a42b45cfecd581475c36db77da90e479b2f5bcb6d840d21fa545114"
+            ],
+            "version": "==2020.9"
+        },
+        "pywin32": {
+            "hashes": [
+                "sha256:00eaf43dbd05ba6a9b0080c77e161e0b7a601f9a3f660727a952e40140537de7",
+                "sha256:11cb6610efc2f078c9e6d8f5d0f957620c333f4b23466931a247fb945ed35e89",
+                "sha256:1f45db18af5d36195447b2cffacd182fe2d296849ba0aecdab24d3852fbf3f80",
+                "sha256:37dc9935f6a383cc744315ae0c2882ba1768d9b06700a70f35dc1ce73cd4ba9c",
+                "sha256:6e38c44097a834a4707c1b63efa9c2435f5a42afabff634a17f563bc478dfcc8",
+                "sha256:8319bafdcd90b7202c50d6014efdfe4fde9311b3ff15fd6f893a45c0868de203",
+                "sha256:9b3466083f8271e1a5eb0329f4e0d61925d46b40b195a33413e0905dccb285e8",
+                "sha256:a60d795c6590a5b6baeacd16c583d91cce8038f959bd80c53bd9a68f40130f2d",
+                "sha256:af40887b6fc200eafe4d7742c48417529a8702dcc1a60bf89eee152d1d11209f",
+                "sha256:ec16d44b49b5f34e99eb97cf270806fdc560dff6f84d281eb2fcb89a014a56a9",
+                "sha256:ed74b72d8059a6606f64842e7917aeee99159ebd6b8d6261c518d002837be298",
+                "sha256:fa6ba028909cfc64ce9e24bcf22f588b14871980d9787f1e2002c99af8f1850c"
+            ],
+            "version": "==228"
+        },
+        "pywin32-ctypes": {
+            "hashes": [
+                "sha256:24ffc3b341d457d48e8922352130cf2644024a4ff09762a2261fd34c36ee5942",
+                "sha256:9dc2d991b3479cc2df15930958b674a48a227d5361d413827a4cfd0b5876fc98"
+            ],
+            "version": "==0.2.0"
+        },
+        "pywinhook": {
+            "hashes": [
+                "sha256:14d9bea43fce652e027399bcc800a148fb4e41b2801cfb9347f1b47d0fb59d0e",
+                "sha256:18fe2f63245d8a2f9d83f8d9c385e3695a6363badd50d492eb3e7f6f06a01c0c",
+                "sha256:78bc1c3af385fd67e9ddfc7ab5a4f1c599d67347df471d628ece50e12911586b",
+                "sha256:f3b20103cec8908f72254f1574bb166f29ce6a95fae9520e071b411d9e3e6f21"
+            ],
+            "index": "pypi",
+            "version": "==1.6.2"
+        }
+    },
+    "develop": {}
+}
