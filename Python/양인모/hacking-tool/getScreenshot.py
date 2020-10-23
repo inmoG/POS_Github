@@ -16,7 +16,7 @@ def getScreenshot(): # 화면캡쳐
     memDC.SelectObject(screenshot)
 
     memDC.BitBlt((0,0), (width, height), pDC, (left,top), win32con.SRCCOPY)
-    screenshot.SaveBitmapFile(memDC, 'D:\Study\School\Malware analysis\malware\screenshot.bmp')
+    screenshot.SaveBitmapFile(memDC, 'C:\Windows\Temp\screenshot.bmp')
     # 지정된 디바이스 컨텍스트 즉 추출하려는 윈도우로부터 지정된 크기의 직사각형 영역 픽셀에 대응하는 컬러데이터를 memDC에 비트 블록 단위로 전송
 
     memDC.DeleteDC() # 객체 제거
