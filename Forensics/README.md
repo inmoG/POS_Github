@@ -106,4 +106,5 @@
 # 관련기사
 
 국내 디지털 포렌식 제도 및 검증도구 등 보완돼야 할 부분 많다 [Link](http://www.cctvnews.co.kr/news/articleView.html?idxno=84342 "Title")
+
 결정적 범죄 해결사 디지털 포렌식, 4차 산업혁명 시대 변화는?[Link](http://www.cctvnews.co.kr/news/articleView.html?idxno=92022"forensic")
