@@ -1,0 +1,12 @@
+문제 : 레지스트리 Run 키에 Run_Sample Value가 보이지 않는다.
+
+원인 : Run Key는 하나만 존재하는 것이 아니라는 것을 알지 못하여 
+       HKEY_LOCAL_MACHINE이 아닌 HKEY_CURRENT_USER에서 RUN Key를 찾음
+
+해결 : 
+
+	1. Sample 06.exe 실행 -> RegEdit 실행 ->  
+	   HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Windows \ CurrentVersion \ Run 경로로 이동
+	
+	2. Sample 06.exe 실행 -> RegEdit 좌측 상단 Edit 메뉴 클릭 -> Find 클릭 -> 
+	   Value를 제외한 나머지는 검색 대상에서 제외한 후 Run_Sample 검색
