@@ -65,5 +65,18 @@
 **CASE WHEN [CONDITHON] THEN [TRUE] ELSE [FALSE] END** : CONDITION의 조건이 참일 경우 TRUE가 실행되고 거짓일 경우 FALSE가 실행됨.
 
 ## 서브 쿼리(SubQuery)
+- **select** 절에 있는 서브쿼리 : 스칼라 서브쿼리 : 하나의 레코드에 하나의 컬럼만 반환할 수 있는 서브쿼리 *(다수의 행에 다수의 컬럼이 반환이 되면 에러가 발생)* 
+- **from** 절에 있는 서브쿼리 : 인라인 뷰 : 가상의 테이블 (제약 조건이 없음)
+- **where** 절에 있는 서브쿼리 : 일반 서브쿼리(서브쿼리)<BR/>
+
+**서브쿼리의 종류**
+- 단일 행 서브쿼리 : 하나의 레코드만 반환해야 하는 서브쿼리<BR/>
+SELECT [name],[email] FROM [NAME] WHERE id=(SELECT id FROM bbs where idx=192);<BR/>
+- 다중 행 서브쿼리 : 두개 이상의 레코드까지 반환할 수 있는 서브쿼리<BR/>
+SELECT [name],[email] FROM [NAME] WHERE id in (SELECT id FROM bbs);
+
+
+
+
 
         
