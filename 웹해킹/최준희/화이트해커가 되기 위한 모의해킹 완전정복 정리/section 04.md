@@ -34,7 +34,7 @@
 
 - p [port number or name] : local-port 를 지정한다. 주로 -l 과 같이 사용하게 된다.
 
-- s [ip address or DNS] : local ip address 를 지정한다. 모든 플렛폼에서 지원되지는 않는다.
+- s [ip address or DNS] : local ip address 를 지정한다. *모든 플렛폼에서 지원되지는 않는다.*
 
 - l : listen 모드로 nc을 띠우게 된다. 당연히 target host는 입력하지 않는다. -p와 같이 사용하게 된다. nc를 server 로서 쓸때 사용.
 
