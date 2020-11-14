@@ -99,6 +99,31 @@
 - 명령어 -sV를 이용해서 해당 서버의 서비스의 버전을 스캔함.
 - -A를 이용하면 더욱 자세한 정보을 알아낼 수 있음.
 
+## 32강
+- smtp-user-enum -h : smtp 명령어 옵션
+
+![화면 캡처 2020-11-14 095656](https://user-images.githubusercontent.com/64259087/99134161-fd65fc00-265f-11eb-8e3e-a2ced220948f.png)
+- smtp-user-enum -M VRFY -U /usr/share/wordlists/metasploit/namelist.txt -t 192.168.56.102 명령어로 -M VRFY 명령어로 **모드**를 설정하고 -U /usr/share/wordlists/metasploit/namelist.txt 명령어로 스캔할 파일을 설정하고 -t 192.168.56.102로 스캔할 서버 호스트를 설정해서 다음과 같이 스캔결과를 출력.
+- -M	: 모드 선택(VRFY , EXPN , RCPT)
+- -u	: 사용자가 있는지 체크
+- -U	: username에 대한 파일
+- -t	: smtp가 실행중인 호스트 IP
+
+## 33강
+- nikto -Help : nikto 옵션 명령어
+
+![화면 캡처 2020-11-14 102930](https://user-images.githubusercontent.com/64259087/99135204-9139c700-2664-11eb-9a69-839a266477e2.png)
+- nikto -h 192.168.56.102 명령어로 서버 버전이나 php 버전 등 각종 정보를 수집할 수 있음. phpinfo.php와 doc에 관하 내용이 보이는데 사이트에 접속을 하면 정보를 수집할 수 있음.
+
+![화면 캡처 2020-11-14 103036](https://user-images.githubusercontent.com/64259087/99135270-deb63400-2664-11eb-97f3-7f789fb2c2df.png)
+- 192.168.56.102/phpinfo.php 사이트에 접속을 해서 php에 관한 정보를 수집할 수 있음.
+
+![화면 캡처 2020-11-14 103108](https://user-images.githubusercontent.com/64259087/99135354-2f2d9180-2665-11eb-9098-7c3180d157df.png)
+- 192.168.56.102/doc/ 사이트에 접속을 해서 파일에 접근을 할 수 있음. (굉장히 취약함)
+
+![화면 캡처 2020-11-14 103834](https://user-images.githubusercontent.com/64259087/99135430-921f2880-2665-11eb-96e0-e72748787bbd.png)
+- 192.168.56.102/doc/ 사이트에 접속을 해서 파일에 접근을 방지하려면 vi /etc/apache2/apache2.conf 명령어로 입력을 해서 내려보면 빨간색으로 표시되어있는 Indexes를 지우면 해결됨.
+
 
 
 
