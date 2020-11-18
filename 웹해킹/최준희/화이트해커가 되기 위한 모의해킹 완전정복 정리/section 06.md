@@ -178,3 +178,34 @@
 
 ![화면 캡처 2020-11-18 125331](https://user-images.githubusercontent.com/64259087/99481898-776aed80-299e-11eb-9e4c-c228c6a998e9.png)
 - 원하는 명령어가 나오지 않았지만 혹시나 localhost:8834 사이트로 들어갔을 때 포트가 열려있고 사이트에 접속이 가능함.
+
+- 혹여나 nessus 아이디와 비밀번호를 잊었을 경우 아래와 같이 실행
+![화면 캡처 2020-11-18 180434](https://user-images.githubusercontent.com/64259087/99510286-3983be80-29ca-11eb-8f30-34bff2b7123f.png)
+- cd /opt/nessus/sbin 폴더로 이동
+- ./nessuscli lsuser 명령어로 아이디 확인가능
+- ./nessuscli chpasswd 명령어로 비밀번호 변경 가능.
+
+![화면 캡처 2020-11-18 180813](https://user-images.githubusercontent.com/64259087/99510517-85366800-29ca-11eb-9052-9d2cc1fd0000.png)
+- nessus 로그인 후 new scan 클릭
+
+![화면 캡처 2020-11-18 180905](https://user-images.githubusercontent.com/64259087/99510591-9aab9200-29ca-11eb-9efa-b43dbd7b14d1.png)
+
+![화면 캡처 2020-11-18 180942](https://user-images.githubusercontent.com/64259087/99510618-a4cd9080-29ca-11eb-8493-5dfe297084dd.png)
+- 이름과 타겟을 입력 후 save
+
+![화면 캡처 2020-11-18 181007](https://user-images.githubusercontent.com/64259087/99510702-b9aa2400-29ca-11eb-8143-67830a32c2f1.png)
+- 스캔 실행
+
+![화면 캡처 2020-11-18 181410](https://user-images.githubusercontent.com/64259087/99510736-c3338c00-29ca-11eb-9939-0492e343631e.png)
+- 스캔을 하면 현재와 같이 취약점들이 나옴
+
+![화면 캡처 2020-11-18 181429](https://user-images.githubusercontent.com/64259087/99510776-cdee2100-29ca-11eb-99af-05b3cfa7b308.png)
+- 해당 취약점은 vcn 비밀번호가 password라는 것을 수집함
+
+![화면 캡처 2020-11-18 181547](https://user-images.githubusercontent.com/64259087/99510864-e52d0e80-29ca-11eb-89d5-144314b4594b.png)
+- 해당 명령어로 통해 들어가보면 vcn에 접속이 가능
+
+![화면 캡처 2020-11-18 181604](https://user-images.githubusercontent.com/64259087/99510926-f7a74800-29ca-11eb-8d56-87eddaa97d07.png)
+- vcn을 root 권한 즉, 관리자의 권한으로 접속이 가능해서 정보를 수집할 수 있음 (굉장한 취약점)
+
+
