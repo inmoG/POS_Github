@@ -124,6 +124,57 @@
 ![화면 캡처 2020-11-14 103834](https://user-images.githubusercontent.com/64259087/99135430-921f2880-2665-11eb-96e0-e72748787bbd.png)
 - 192.168.56.102/doc/ 사이트에 접속을 해서 파일에 접근을 방지하려면 vi /etc/apache2/apache2.conf 명령어로 입력을 해서 내려보면 빨간색으로 표시되어있는 Indexes를 지우면 해결됨.
 
+## 34강
+- sparta 사용법
 
+![화면 캡처 2020-11-18 114508](https://user-images.githubusercontent.com/64259087/99477129-391d0080-2995-11eb-9919-66033c66de22.png)
 
+![화면 캡처 2020-11-18 114551](https://user-images.githubusercontent.com/64259087/99477171-4cc86700-2995-11eb-9565-000a6172252e.png)
 
+![화면 캡처 2020-11-18 114609](https://user-images.githubusercontent.com/64259087/99477204-5c47b000-2995-11eb-8acc-9827c1f68515.png)
+- 스캐닝할 ip를 입력
+- Run nmap host discovery 옵션 : 네트워크 범위 전체를 검색하였을 때 호스트 검색을 하는 옵션
+- Run staged nmap scan 옵션 : 포트가 검색되었을 때 각 포트에 대해서 추가 정보 수집을 하는 옵션
+
+![화면 캡처 2020-11-18 115116](https://user-images.githubusercontent.com/64259087/99477221-67024500-2995-11eb-9ba8-5b0a71213707.png)
+
+![화면 캡처 2020-11-18 115141](https://user-images.githubusercontent.com/64259087/99477239-6f5a8000-2995-11eb-8a7f-b789fa67257e.png)
+
+![화면 캡처 2020-11-18 120021](https://user-images.githubusercontent.com/64259087/99477325-a597ff80-2995-11eb-95bc-0670b1f74418.png)
+
+![화면 캡처 2020-11-18 115544](https://user-images.githubusercontent.com/64259087/99477383-bea0b080-2995-11eb-8dce-73208be4ea39.png)
+- 현재 root 계정이 사용중인걸 알아 내면 바로 사용가능.
+
+![화면 캡처 2020-11-18 115608](https://user-images.githubusercontent.com/64259087/99477484-ed1e8b80-2995-11eb-8f1e-ccbe69980b80.png)
+- mysql -h 192.168.56.102 -u root 명령어로 root 계정으로 mysql로 접속해서 정보 수집 가능.
+
+## 35강 - 36강
+- 종합 취약점 스캐닝
+- Nessus 설치법
+- Google에 download nessus 검색
+
+![화면 캡처 2020-11-18 122924](https://user-images.githubusercontent.com/64259087/99480808-3245bc00-299c-11eb-8e96-962135740c62.png)
+- 해당 사이트에서 32비트면 위에 걸 다운로드 64비트면 아래 걸 다운로드 함. (현재 칼리리눅스 64비트)
+
+![화면 캡처 2020-11-18 123013](https://user-images.githubusercontent.com/64259087/99480874-4e495d80-299c-11eb-8181-decbd94181ea.png)
+- 무료버전을 다운로드 (맨 왼쪽)
+
+![화면 캡처 2020-11-18 123037](https://user-images.githubusercontent.com/64259087/99480893-5a351f80-299c-11eb-8a42-91906f5ada7e.png)
+- 이름과 이메일을 쓰고 다운로드 코드를 받음. (이메일로 들어가면 코드를 발급받음.)
+
+![화면 캡처 2020-11-18 123154](https://user-images.githubusercontent.com/64259087/99480965-79cc4800-299c-11eb-822b-9ddf8d2af1bc.png)
+- 해당 폴더로 들어가면 Nessus 파일이 있는 것이 확인됨.
+
+![화면 캡처 2020-11-18 123408](https://user-images.githubusercontent.com/64259087/99481015-96688000-299c-11eb-8f8e-2af2d73b761d.png)
+- cd /root/Downloads/ 로 들어가고 dpkg -i ./Nessus-8.12.1-debian6_amd64.deb 명령어를 입력
+
+![화면 캡처 2020-11-18 125627](https://user-images.githubusercontent.com/64259087/99481452-87ce9880-299d-11eb-92a0-64feffad56e7.png)
+- /bin/systemctl start 입력하면 too few arguments 라는 입력이 나옴. (너무 많은 인수)
+- /bin/systemctl start nessus. service 입력하면 오류나옴.
+- /bin/systemctl start nessus.service 입력하면 아무것도 출력되지 않음.
+- /bin/systemctl nessusd start 입력하면 unkown operation nessusd 입력이 나옴. (nessusd 알수 없는 작업)
+- 강의 진행에 있어서 nessus가 실행이 되고 위에 8854포트가 열려야 함.
+- 애초에 다른 문자열이 나왔지만 강의는 32비트를 다운로드 하였고 자신의 컴퓨터는 64비트를 다운로드 하여 다르다고 판단됨.
+
+![화면 캡처 2020-11-18 125331](https://user-images.githubusercontent.com/64259087/99481898-776aed80-299e-11eb-9e4c-c228c6a998e9.png)
+- 원하는 명령어가 나오지 않았지만 혹시나 localhost:8834 사이트로 들어갔을 때 포트가 열려있고 사이트에 접속이 가능함.
