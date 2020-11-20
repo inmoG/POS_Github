@@ -29,3 +29,5 @@
 - git reset --hard {commitID} : 해당 유실된 커밋을 HEAD로 하는 tree로 돌려놓는다.
 
 - git cherry-pick {commitID} : 해당 유실된 커밋만 현재 브랜치로 가져온다.
+- git config --global user.name "John Doe" : git 설치 시 계정 설정
+- git config --global user.email johndoe@example.com : git 설치 시 계정 설정
