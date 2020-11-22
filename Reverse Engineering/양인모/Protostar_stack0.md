@@ -55,7 +55,9 @@ ebp를 스택에 저장한다.
 
 - mov DWORD PTR [esp+0x5c],0x0
 `esp+0x5c` 주소에 0을 넣는다. 코드를 보면 0을 넣는 부분은 `modified = 0` 이다. 따라서 modified 변수 주소는 `[esp+0x5c]`이다.
-![](https://images.velog.io/images/jjewqm/post/e3b82cee-85fd-4425-9f82-3dd90add08f8/image.png)
+
+    ![](https://images.velog.io/images/jjewqm/post/e3b82cee-85fd-4425-9f82-3dd90add08f8/image.png)
+
 - lea eax, [esp+0x1c]
 - mov DWORD PTR [esp], eax
 - call 0x804830c <<gets@plt>>
@@ -71,7 +73,6 @@ test 명령어는 and 연산을 수행해 결과가 0이면 ZF가 1이 되고 1�
 ![](https://images.velog.io/images/jjewqm/post/29b8bdd2-a8c8-4510-aafb-9f649449a6a8/image.png)
 
 - je 0x8048427 <main+51>
-![](https://images.velog.io/images/jjewqm/post/bc6ed8fc-5278-495b-bc3f-eff561efd4b4/image.png)
 
     je 명령어는 **jump if equa**l을 의미한다. 연산 결과가 0이면 ZF가 1이므로 main+51 주소로 이동하고 1이면 ZF가 0이므로 다음 명령 `mov DWORD PTR [esp],0x8048500` 으로 이동한다. 쉽게 설명하면 위 코드에서 modified 값이 0이 아닐 경우 you have changed the 'modifed' variable 문자열을 출력한다. 그러나 0이면 즉 modified 값이 **0과 같으면** Try again이 출력된다. 
 
