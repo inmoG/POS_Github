@@ -14,6 +14,7 @@
     ![](https://images.velog.io/images/kmk9502/post/2dc42377-f9af-4cc9-8abf-72f40be7ef08/httpapi.dll%EC%9D%98%20image%20base.png)
     <httpapi.dll의 기본 Image Base>
     ![](https://images.velog.io/images/kmk9502/post/d22464a2-767d-450e-85d0-4eaf6ecfa7e9/mfc42.dll%EC%9D%98%20image%20base.png)
+    
     <mfc42.dll의 기본 Image Base>
 
 - ### 예외
