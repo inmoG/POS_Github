@@ -22,7 +22,7 @@
 - git remote add origin(별명) remote repo : 원격 저장소 연결
 - git remote -v : 원격 저장소 주소 확인
 - git push : 버전 업로드
-- git clone remote repo : 원격 저장소 복제
+- git clone [remote repo] : 로컬 저장소에 원격 저장소 복제
 - git restore --staged <file path> : 스테이징 단계에서 이전으로 되돌린다.
 - git reflog : 저장소 tree에 일반적으로 보이지 않는 모든 commit들을 살펴볼 수 있다. 여기서 유실된 commit을 찾은 후 해당 commit의 commitID를 찾아서 상황에 맞게 다음 명령어들을 사용하면 된다.
 
